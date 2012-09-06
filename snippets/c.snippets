@@ -1,11 +1,11 @@
 # main()
-snippet main
+snippet mainn
 	int main(int argc, const char *argv[])
 	{
 		${1}
 		return 0;
 	}
-snippet mainn
+snippet main
 	int main(void)
 	{
 		${1}
@@ -60,12 +60,14 @@ snippet do
 	} while (${1:/* condition */});
 # While Loop
 snippet wh
-	while (${1:/* condition */}) {
+	while(${1:/* condition */})
+	{
 		${2:/* code */}
 	}
 # For Loop
 snippet for
-	for (${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+	for(${2:i} = 0; $2 < ${1:count}; $2${3:++})
+	{
 		${4:/* code */}
 	}
 # Custom For Loop
